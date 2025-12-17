@@ -62,15 +62,15 @@ export default function Index() {
       <header className="sticky top-0 z-50 bg-white/90 backdrop-blur-md border-b shadow-sm">
         <div className="container mx-auto px-4 py-4">
           <div className="flex items-center justify-between">
-            <div className="flex items-center gap-3">
-              <div className="bg-gradient-to-br from-primary to-secondary p-2 rounded-xl">
-                <Icon name="Home" className="text-white" size={28} />
+            <div className="flex items-center gap-3 cursor-pointer" onClick={() => scrollToSection('home')}>
+              <div className="bg-gradient-to-br from-primary to-secondary p-3 rounded-2xl shadow-lg">
+                <Icon name="LayoutGrid" className="text-white" size={32} />
               </div>
               <div>
                 <h1 className="text-2xl font-bold bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent">
                   ОкнаПро
                 </h1>
-                <p className="text-xs text-muted-foreground">Окна ПВХ премиум-класса</p>
+                <p className="text-xs text-muted-foreground font-medium">Окна ПВХ премиум-класса</p>
               </div>
             </div>
 
